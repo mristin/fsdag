@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsdag"
+version = "1.0.0"
+description = "Simply define DAG-workflows in Python where artefacts are stored on a filesystem."
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = []
+
+license = {text = "MIT License"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+# Optional table for additional metadata
+[project.urls]
+repository = "https://github.com/mristin/fsdag"
+
+
+
+[tool.setuptools.packages.find]
+include = ["fsdag"]
+exclude = ["precommit.py"]
+
+# Development dependencies
+[tool]
+[tool.black]
+line-length = 88
+
+[tool.pylint]
+disable = ["too-many-locals", "no-member", "duplicate-code", "no-else-return"]
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+
+[[tool.mypy.overrides]]
+module = "tqdm"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "requests"
+ignore_missing_imports = true
+
+
+[project.optional-dependencies]
+dev = [
+    "black==24.8.0",
+    "mypy==1.13.0",
+    "pylint==3.2.7",
+    "coverage==7.6.1"
+]
