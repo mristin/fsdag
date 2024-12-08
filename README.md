@@ -1,6 +1,9 @@
 # fsdag
 
-
+[![CI](https://github.com/mristin/fsdag/actions/workflows/ci.yml/badge.svg)](https://github.com/mristin/fsdag/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/mristin/fsdag/badge.svg?branch=main)](https://coveralls.io/github/mristin/fsdag)
+[![PyPI - Version](https://badge.fury.io/py/fsdag.svg)](https://badge.fury.io/py/fsdag)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fsdag.svg)
 
 This library allows you to simply define DAG-workflows in Python where artefacts are stored on a filesystem.
 
