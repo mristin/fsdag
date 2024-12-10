@@ -4,7 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fsdag"
-version = "1.0.0"
+# NOTE (mristin):
+# Do not forget to update CHANGELOG.md and fsdag/__init__.py!
+version = "1.0.1"
 description = "Simply define DAG-workflows in Python where artefacts are stored on a filesystem."
 readme = "README.md"
 requires-python = ">=3.8"

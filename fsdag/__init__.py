@@ -1,6 +1,6 @@
 """Simply define DAG-workflows in Python where artefacts are stored on a filesystem."""
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Marko Ristin (marko@ristin.ch)"
 __license__ = "MIT"
 __status__ = "Production"
